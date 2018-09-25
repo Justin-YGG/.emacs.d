@@ -1,0 +1,41 @@
+
+;; ----- smex-history -----
+(
+ eval-buffer
+ ielm
+ list-packages
+ profiler-start
+ eshell
+ highlight-indentation-mode
+ org-publish
+)
+
+;; ----- smex-data -----
+(
+ (list-packages . 43)
+ (eval-buffer . 411)
+ (jedi:install-server . 3)
+ (exec-path-from-shell-initialize . 3)
+ (venv-workon . 4)
+ (package-install . 2)
+ (package-refresh-contents . 2)
+ (profiler-start . 4)
+ (profiler-report . 2)
+ (butterfly . 1)
+ (tramp-cleanup-connection . 2)
+ (run-python . 2)
+ (doc-view-mode . 3)
+ (pdf-tools-install . 3)
+ (pdf-info-check-epdfinfo . 1)
+ (package-install-file . 1)
+ (pdf-view-mode . 2)
+ (shell . 2)
+ (eshell . 2)
+ (org-publish . 33)
+ (org-preview-html-mode . 1)
+ (highlight-indentation-mode . 6)
+ (tabbar-switch-group . 1)
+ (tabbar-select-end-tab . 1)
+ (tabbar-mode . 2)
+ (ielm . 1)
+)

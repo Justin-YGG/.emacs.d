@@ -1,0 +1,11 @@
+(require 'dashboard)
+(dashboard-setup-startup-hook)
+
+;; Set the title
+(setq dashboard-banner-logo-title "Happy Hacking，Justin")
+(setq projects ["~/worksapce/solar/"])
+(setq dashboard-items '((recents  . 5)
+                        (projects . 3)
+                        (agenda . 5)))
+
+(provide 'init-dashboard)

@@ -1,0 +1,1 @@
+("~/worksapce/sicp/" "~/worksapce/solar/" "~/org/public_html/" "/usr/local/" "~/.emacs.d/elpa-25.1/jedi-core-20170121.1410/")
