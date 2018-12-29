@@ -1,0 +1,8 @@
+.DS_Store
+.emacs.desktop.lock
+
+/.emacs.desktop
+/elpa-25.1
+/elpa-24.5
+/anaconda-mode
+/auto-save-list

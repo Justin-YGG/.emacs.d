@@ -1,2 +1,5 @@
 ls
 j solar
+terminal-notifier -message "Eshell" -sender "org.gnu.Emacs"
+usr/local/bin/terminal-notifier -message "Eshell" -sender "org.gnu.Emacs"
+exit

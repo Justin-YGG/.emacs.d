@@ -1,26 +1,26 @@
 
 ;; ----- smex-history -----
 (
- eval-buffer
- ielm
- list-packages
- profiler-start
- eshell
- highlight-indentation-mode
  org-publish
+ eval-buffer
+ profiler-start
+ flymd-flyit
+ list-packages
+ venv-workon
+ anaconda-mode
 )
 
 ;; ----- smex-data -----
 (
- (list-packages . 43)
- (eval-buffer . 411)
+ (list-packages . 50)
+ (eval-buffer . 441)
  (jedi:install-server . 3)
- (exec-path-from-shell-initialize . 3)
- (venv-workon . 4)
+ (exec-path-from-shell-initialize . 5)
+ (venv-workon . 18)
  (package-install . 2)
  (package-refresh-contents . 2)
- (profiler-start . 4)
- (profiler-report . 2)
+ (profiler-start . 5)
+ (profiler-report . 3)
  (butterfly . 1)
  (tramp-cleanup-connection . 2)
  (run-python . 2)
@@ -31,11 +31,17 @@
  (pdf-view-mode . 2)
  (shell . 2)
  (eshell . 2)
- (org-publish . 33)
+ (org-publish . 96)
  (org-preview-html-mode . 1)
  (highlight-indentation-mode . 6)
  (tabbar-switch-group . 1)
  (tabbar-select-end-tab . 1)
  (tabbar-mode . 2)
  (ielm . 1)
+ (imenu . 1)
+ (anaconda-mode . 8)
+ (pythonic-activate . 4)
+ (venv-deactivate . 2)
+ (pythonic-deactivate . 1)
+ (flymd-flyit . 2)
 )

@@ -1,4 +1,11 @@
 ;; -*- lexical-binding: t -*-
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (setq debug-on-error t)
 
 ;;; This file bootstraps the configuration, which is divided into
@@ -12,6 +19,10 @@
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "elisp" user-emacs-directory))
+(require 'init-elpa)      ;; Machinery for installing required packages
+(require 'init-exec-path) ;; Set up $PATH
+
+
 (require 'init-benchmarking) ;; Measure startup time
 
 
@@ -35,10 +46,7 @@
 (require 'init-site-lisp) ;; Must come before elpa, as it may provide package.el
                                         ; Calls (package-initialize)
 (require 'package)
-(package-initialize)
-(require 'init-elpa)      ;; Machinery for installing required packages
-(require 'init-exec-path) ;; Set up $PATH
-
+;(package-initialize)
 ;;----------------------------------------------------------------------------
 ;; Allow users to provide an optional "init-preload-local.el"
 ;;----------------------------------------------------------------------------
@@ -58,7 +66,7 @@
 ;;(require 'init-local)
 (require 'init-python)
 (require 'init-python-mode)
-                                        ; (require 'init-org-publish)
+(require 'init-org-publish)
                                         ; (require 'init-frame-hooks)
                                         ; (require 'init-xterm)
 (require 'init-themes)
@@ -132,17 +140,18 @@
                                         ;
 (require 'init-paredit)
 (require 'init-lisp)
-; (require 'init-slime)
-; (require 'init-clojure)
-; (require 'init-clojure-cider)
-; (require 'init-common-lisp)
+(require 'init-exec-path)
+                                        ; (require 'init-slime)
+                                        ; (require 'init-clojure)
+                                        ; (require 'init-clojure-cider)
+                                        ; (require 'init-common-lisp)
 
-; (when *spell-check-support-enabled*
-;   (require 'init-spelling))
+                                        ; (when *spell-check-support-enabled*
+                                        ;   (require 'init-spelling))
 
-; (require 'init-misc)
+                                        ; (require 'init-misc)
 
-; (require 'init-folding)
+                                        ; (require 'init-folding)
 (require 'init-dash)
 
 ;;(require 'init-twitter)
@@ -150,15 +159,15 @@
 ;; (require 'init-ledger)
 ;; Extra packages which don't require any configuration
 
-; (require-package 'gnuplot)
-; (require-package 'lua-mode)
-; (require-package 'htmlize)
-; (require-package 'dsvn)
-(when *is-a-mac*
-  (require-package 'osx-location))
-(unless (eq system-type 'windows-nt)
-  (maybe-require-package 'daemons))
-(maybe-require-package 'dotenv-mode)
+                                        ; (require-package 'gnuplot)
+                                        ; (require-package 'lua-mode)
+                                        ; (require-package 'htmlize)
+                                        ; (require-package 'dsvn)
+                                        ;(when *is-a-mac*
+                                        ; (require-package 'osx-location))
+                                        ;(unless (eq system-type 'windows-nt)
+                                        ;  (maybe-require-package 'daemons))
+                                        ;(maybe-require-package 'dotenv-mode)
 
 (when (maybe-require-package 'uptimes)
   (setq-default uptimes-keep-count 200)

@@ -20,6 +20,7 @@
 (setq org-fast-tag-selection-single-key t)
 (setq org-use-fast-todo-selection t)
 (setq org-startup-truncated nil)
+(setq org-startup-indented t)
 
 (setq org-directory (expand-file-name "~/org"))
 ;(setq org-default-notes-file (concat org-directory "~/org/gtd/inbox.org"))
@@ -117,7 +118,32 @@
   (interactive)
   (message "Deactivated linum mode")
   (linum-mode 0)
-)
+  )
+
+;; notify
+(defun notify-osx (title message)
+  (call-process "terminal-notifier"		 
+                nil 0 nil		 
+                "-group" "Emacs"		 
+                "-title" title		 
+                "-sender" "org.gnu.Emacs"		 
+                "-message" message		 
+                "-activate" "org.gnu.Emacs")
+  )
+
+(add-hook 'org-pomodoro-finished-hook
+          (lambda ()
+            (notify-osx "Pomodoro completed!" "Time for a break.")))
+(add-hook 'org-pomodoro-break-finished-hook
+          (lambda ()
+            (notify-osx "Pomodoro Short Break Finished" "Ready for Another?")))
+(add-hook 'org-pomodoro-long-break-finished-hook
+          (lambda ()
+            (notify-osx "Pomodoro Long Break Finished" "Ready for Another?")))
+(add-hook 'org-pomodoro-killed-hook    
+          (lambda ()
+            (notify-osx "Pomodoro Killed" "One does not simply kill a pomodoro!")))
+
 (add-hook 'org-mode-hook 'nolinum)
 
 (provide 'init-org-mode)

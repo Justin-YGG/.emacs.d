@@ -42,14 +42,14 @@
 (setq company-idle-delay 0.2;菜单延迟
       company-minimum-prefix-length 1; 开始补全字数
       company-require-match nil
-      company-dabbrev-ignore-case nil
-      company-dabbrev-downcase nil
+                                        ;company-dabbrev-ignore-case nil
+                                        ;company-dabbrev-downcase nil
       company-show-numbers t; 显示序号
       company-transformers '(company-sort-by-backend-importance)
       company-continue-commands '(not helm-dabbrev)
       company-selection-wrap-around t
       company-tooltip-align-annotations t
-      ;company-transformers '(company-sort-by-occurrence)
+                                        ;company-transformers '(company-sort-by-occurrence)
       )
                                         ; 补全后端使用anaconda
 (add-to-list 'company-backends '(company-anaconda :with company-yasnippet))
@@ -60,6 +60,7 @@
 (define-key company-active-map (kbd "M-p") nil)
 (define-key company-active-map (kbd "C-n") 'company-select-next)
 (define-key company-active-map (kbd "C-p") 'company-select-previous)
+
 
 (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
 ;; 在python模式中自动启用

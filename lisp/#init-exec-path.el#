@@ -1,0 +1,5 @@
+(require-package 'exec-path-from-shell)
+
+(when (featurep 'cocoa)
+  (require 'exec-path-from-shell)
+  (exec-path-from-shell-initialize))

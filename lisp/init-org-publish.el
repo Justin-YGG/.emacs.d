@@ -38,5 +38,6 @@
 (setq org-export-with-smart-quotes t)
 (setq org-html-table-default-attributes
       '(:border "0" :cellspacing "0" :cellpadding "6" :rules "none" :frame "none"))
+(setq org-image-actual-width nil)
 (provide 'init-org-publish)
 ;;; org-publish.el ends here
