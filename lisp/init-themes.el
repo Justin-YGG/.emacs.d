@@ -1,10 +1,13 @@
 (require-package 'spacemacs-theme)
-;(require-package 'tao-theme)
+(require-package 'srcery-theme)
+                                        ;(require-package 'tao-theme)
 ;; If you don't customize it, this is the theme you get.
 
-(setq-default custom-enabled-themes '(spacemacs-dark))
-(load-theme 'spacemacs-dark t)
-;(load-theme 'tao-yang t)
+(setq-default custom-enabled-themes '(search srcery spacemacs-dark))
+                                        ;(load-theme 'spacemacs-dark t)
+(load-theme 'srcery t)
+
+                                        ;(load-theme 'tao-yang t)
 ;;(load-theme 'dracula t)
 
 ;; Ensure that themes will be applied even if they have not been customized

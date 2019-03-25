@@ -2,25 +2,25 @@
 ;; ----- smex-history -----
 (
  org-publish
+ org-clock-out
+ org-clock-in
+ org-pomodoro
+ cnfonts-edit-profile
+ cnfonts-increase-fontsize
  eval-buffer
- profiler-start
- flymd-flyit
- list-packages
- venv-workon
- anaconda-mode
 )
 
 ;; ----- smex-data -----
 (
- (list-packages . 50)
- (eval-buffer . 441)
+ (list-packages . 59)
+ (eval-buffer . 572)
  (jedi:install-server . 3)
  (exec-path-from-shell-initialize . 5)
- (venv-workon . 18)
+ (venv-workon . 34)
  (package-install . 2)
  (package-refresh-contents . 2)
- (profiler-start . 5)
- (profiler-report . 3)
+ (profiler-start . 6)
+ (profiler-report . 4)
  (butterfly . 1)
  (tramp-cleanup-connection . 2)
  (run-python . 2)
@@ -31,7 +31,7 @@
  (pdf-view-mode . 2)
  (shell . 2)
  (eshell . 2)
- (org-publish . 96)
+ (org-publish . 216)
  (org-preview-html-mode . 1)
  (highlight-indentation-mode . 6)
  (tabbar-switch-group . 1)
@@ -44,4 +44,16 @@
  (venv-deactivate . 2)
  (pythonic-deactivate . 1)
  (flymd-flyit . 2)
+ (emacs-uptime . 4)
+ (company-tabnine . 7)
+ (company-tabnine-install-binary . 1)
+ (company-tabnine-restart-server . 3)
+ (describe-variable . 2)
+ (awesome-tab-ace-jump . 1)
+ (dashboard-mode . 2)
+ (cnfonts-edit-profile . 15)
+ (cnfonts-increase-fontsize . 2)
+ (org-pomodoro . 1)
+ (org-clock-in . 6)
+ (org-clock-out . 7)
 )

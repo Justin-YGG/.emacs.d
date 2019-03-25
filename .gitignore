@@ -1,5 +1,6 @@
 .DS_Store
 .emacs.desktop.lock
+.uptimes.el
 
 /.emacs.desktop
 /elpa-25.1

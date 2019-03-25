@@ -48,7 +48,7 @@
 
 (setq org-todo-keywords
       '(
-        (sequence "IDEA(i)" "☛ TODO(t)" "STARTED(s)" "NEXT(n)" "⚑ WAITING(w)" "|" "✓ DONE(d)")
+        (sequence "IDEA(i)" "☛ TODO(t)" "☀ STARTED(s)" "➔ NEXT(n)" "⚑ WAITING(w)" "|" "✓ DONE(d)")
         (sequence "|" "✘ CANCELED(c)" "DELEGATED(l)" "SOMEDAY(f)")
         ))
 
@@ -124,12 +124,33 @@
 (defun notify-osx (title message)
   (call-process "terminal-notifier"		 
                 nil 0 nil		 
-                "-group" "Emacs"		 
                 "-title" title		 
                 "-sender" "org.gnu.Emacs"		 
-                "-message" message		 
-                "-activate" "org.gnu.Emacs")
+                "-message" message)
   )
+
+(defvar yt-iframe-format
+  ;; You may want to change your width and height.
+  (concat "<iframe width=\"1280\""
+          " height=\"720\""
+          " src=\"https://www.youtube.com/embed/%s\""
+          " frameborder=\"0\""
+          " allowfullscreen>%s</iframe>"))
+
+(org-add-link-type
+ "yt"
+ (lambda (handle)
+   (browse-url
+    (concat "https://www.youtube.com/embed/"
+            handle)))
+ (lambda (path desc backend)
+   (cl-case backend
+     (html (format yt-iframe-format
+                   path (or desc "")))
+     (latex (format "\href{%s}{%s}"
+                    path (or desc "video"))))))
+
+
 
 (add-hook 'org-pomodoro-finished-hook
           (lambda ()
