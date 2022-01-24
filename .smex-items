@@ -2,22 +2,22 @@
 ;; ----- smex-history -----
 (
  org-publish
+ company-tabnine-install-binary
+ package-install
+ list-packages
+ package-list-packages
  org-clock-out
  org-clock-in
- org-pomodoro
- cnfonts-edit-profile
- cnfonts-increase-fontsize
- eval-buffer
 )
 
 ;; ----- smex-data -----
 (
- (list-packages . 59)
+ (list-packages . 62)
  (eval-buffer . 572)
  (jedi:install-server . 3)
  (exec-path-from-shell-initialize . 5)
  (venv-workon . 34)
- (package-install . 2)
+ (package-install . 4)
  (package-refresh-contents . 2)
  (profiler-start . 6)
  (profiler-report . 4)
@@ -31,7 +31,7 @@
  (pdf-view-mode . 2)
  (shell . 2)
  (eshell . 2)
- (org-publish . 216)
+ (org-publish . 287)
  (org-preview-html-mode . 1)
  (highlight-indentation-mode . 6)
  (tabbar-switch-group . 1)
@@ -46,7 +46,7 @@
  (flymd-flyit . 2)
  (emacs-uptime . 4)
  (company-tabnine . 7)
- (company-tabnine-install-binary . 1)
+ (company-tabnine-install-binary . 3)
  (company-tabnine-restart-server . 3)
  (describe-variable . 2)
  (awesome-tab-ace-jump . 1)
@@ -56,4 +56,5 @@
  (org-pomodoro . 1)
  (org-clock-in . 6)
  (org-clock-out . 7)
+ (package-list-packages . 1)
 )

@@ -1,5 +1,6 @@
 (require-package 'exec-path-from-shell)
 
-(exec-path-from-shell-copy-env "/usr/local/bin")
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
 
 (provide 'init-exec-path)

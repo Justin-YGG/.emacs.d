@@ -6,6 +6,6 @@
 (setq dashboard-startup-banner "~/.emacs.d/img/logo.png")
 ;;(setq projects ["~/worksapce/solar/"])
 (setq dashboard-items '((recents  . 5)
-                        (projects . 3)))
+                        (projects . 5)))
 
 (provide 'init-dashboard)

@@ -22,7 +22,7 @@
         ("文泉驿等宽微米黑" "Ubuntu Mono" "隶书" "新宋体")
         ("HanaMinB" "SimSun-ExtB" "MingLiU-ExtB")))
 
-(set-default-font "Monaco")
+;;(set-default-font "Monaco")
 
 
 ;; 禁掉~ 为后 缀的文件为自动生成的备份文件

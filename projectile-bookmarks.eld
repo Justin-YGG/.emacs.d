@@ -1,1 +1,1 @@
-("~/org/notes/" "~/.emacs.d/" "~/worksapce/solar/" "~/worksapce/leetcode/" "~/worksapce/service-trade/" "~/org/public_html/" "~/worksapce/solar-ops/" "~/worksapce/sicp/" "/usr/local/" "~/.emacs.d/elpa-25.1/jedi-core-20170121.1410/")
+("~/org/notes/" "~/.emacs.d/" "~/" "/usr/local/")

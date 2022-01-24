@@ -2,7 +2,7 @@
 ;; TODO Default sort order should place [a-z] before punctuation
 (setq tab-always-indent 'complete)
 (add-to-list 'completion-styles 'initials t)
-(add-to-list 'company-backends #'company-tabnine)
+;;(add-to-list 'company-backends #'company-tabnine)
 
 (when (maybe-require-package 'company)
   (add-hook 'after-init-hook 'global-company-mode)

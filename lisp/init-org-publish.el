@@ -76,7 +76,6 @@
  '(
    (emacs-lisp . t)
    (org . t)
-   (sh . t)
    (C . t)
    (python . t)
    ))
